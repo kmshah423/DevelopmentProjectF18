@@ -1,0 +1,8 @@
+Project 1 Description 
+Write a program thatprints the numbers from 1 to 100.
+However, for multiples of 3 print to console "Fizz" and for multiples of 5 print to console "Buzz".
+Also for numbers that are both multiples of 3 and 5 print to console "Fizz Buzz".
+
+Optional/Bonus:
+1) Write an additional function that prints the numbers n to m following above.
+2) See if you can do FizzBuzz with out using a loop.
