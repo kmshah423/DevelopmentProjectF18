@@ -1,2 +1,3 @@
 # DevelopmentProjectF18
-Tutorial Branch...No Content!
+This branch will contain examples from myself or other Dev team members
+for the projects we work on.
