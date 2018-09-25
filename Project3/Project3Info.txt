@@ -39,6 +39,7 @@ Class()
 constructor with 
 	- String department
 	- ints classNumber, startTime and endTime
+	- list meetingDays with Days class occurs
 
 functions:
 1) print_class_info()
