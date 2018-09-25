@@ -1,2 +1,3 @@
 Name,Best Contact,Discord Username(# included)
 Jaemin Kim, 714-875-3490 or jaeminkim@cpp.edu, Jaemin#5578
+Kobe Lee, 714-357-0758 or kobelee@cpp.edu, kml#2254
