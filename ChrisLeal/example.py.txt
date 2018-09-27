@@ -1,7 +1,0 @@
-#Constants
-WEEK= ["Monday" , "Tuesday",....,"Sunday"]
-
-#___"main"___
-for day in WEEK: 
-	if(WEEK[day] == "Tuesday" or WEEK[day] == "Thursday"):
-		print("Hello dev project team.Welcome to today's meeting.")
