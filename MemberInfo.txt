@@ -1,2 +1,3 @@
 Name,Best Contact,Discord Username(# included)
 Keith Chen, Discord: kachenbb#5526
+Calvin Truong, ctruong@cpp.edu, ChildishCalvino#2887
