@@ -1,3 +1,4 @@
 Name,Best Contact,Discord Username(# included)
 
 Michael Tang, email is michaeltang@cpp.edu, miko#1660
+Eric Platt, email is ejplatt@cpp.edu, flyingfish#8817
