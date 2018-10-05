@@ -1,0 +1,8 @@
+# .gitignore is a special file that list various files and folders to be ignored by git
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
