@@ -13,9 +13,20 @@ class Group_16:
         print(self.names)
 
 
-newGroup = Group_16()
 
-newGroup.print_Members()
+
+class GroupMembers:
+    def __init__(self,name,major,classSchdule[])
+        self.name = name
+        self.major = major
+        self.classSchdule[]
+
+
+
+
+
+  xbfbfdbfdbfbf
+
         
 
 
