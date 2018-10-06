@@ -2,7 +2,7 @@ The whole point of Merge Sort is to sort large amounts of data with a small
 amount of space. In this folder there is a folder of 8500 ints that are unsorted.
 
 Things to know:
-"Your Pc" has 8 gigabytes of RAM
+You only have the memory to process 500 ints at a time
 Disk Space is not an issue
 Ints in python during runtime are 24 bytes 
 
