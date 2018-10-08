@@ -1,5 +1,5 @@
 Use Radix sort to sort the text from BookText.txt into alphabetical order.
 Radix sort was featred in thursdays lecture and is available on
-google Colab. You may use that code or make your own.
+Google Colab. You may use that code or make your own.
 
-*you will need to have to have 26 buckets
+*you will need to have 26 buckets
