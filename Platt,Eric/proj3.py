@@ -11,6 +11,9 @@ class Group_16:
     def print_members(self):
         pass
 
+    def __repr__(self):
+        return f'Group_16({self.members})'
+
 
 class GroupMember:
     def __init__(self, name, major, classSchedule):
@@ -21,6 +24,9 @@ class GroupMember:
     def print_schedule(self):
         pass
 
+    def __repr__(self):
+        return f'GroupMember({self.name}, {self.major}, {self.classSchedule})'
+
 
 class Class:
     def __init__(self, department, classNumber, weekdays,  startTime, endTime):
@@ -30,30 +36,45 @@ class Class:
         self.startTime = startTime
         self.endTime = endTime
 
-    def __str__(self):
-        return (f'department: {self.department}, \
-                classNumber: {self.classNumber}, \
-                weekdays: {self.weekdays}, \
-                time: {self.startTime} - {self.endTime}')
+    def __repr__(self):
+        return (f"Class({self.department}, "
+                f"{self.classNumber}, "
+                f"{self.weekdays}, "
+                f"{self.startTime}, "
+                f"{self.endTime})")
 
 
-# This is an experimental function to load class data.
-# It is not yet finished
-# It loads the json file containing the class information and passes it to a
-# new instance of Class
+# The loadMembers() creates and returns an instance of Group_16.
+# It creates a list of GroupMember() from the information found in the
+# members.json file. That list is then passed to a new instance of Group_16
 
-def loadClasses():
-    with open('classes.json', 'r') as read_file:
+
+def loadMembers():
+    with open('members.json', 'r') as read_file:
+        members = []
         data = json.load(read_file)
-        print(data)
-        print('\n')
-        dummy = Class(data['department'],
-                      data['classNumber'],
-                      data['weekdays'],
-                      data['start'],
-                      data['end'])
-        print(dummy)
+        for x in data:
+            classes = [loadClass(y) for y in x['classes']]
+            members.append(GroupMember(x['name'], x['major'], classes))
+    return Group_16(members)
+
+
+# This function takes a classNumber to be used as a key for the JSON file
+# It loads the json file containing said class information and passes it to a
+# new instance of Class.
+# That instance is then returned.
+
+
+def loadClass(entry):
+    with open('classes.json', 'r') as read_file:
+        data = json.load(read_file)[entry]
+        item = Class(data['department'],
+                     entry,
+                     data['weekdays'],
+                     data['start'],
+                     data['end'])
+    return item
 
 
 if __name__ == '__main__':
-    loadClasses()
+    data = loadMembers()
