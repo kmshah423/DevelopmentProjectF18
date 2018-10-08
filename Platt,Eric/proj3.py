@@ -52,7 +52,6 @@ def loadClasses():
                       data['weekdays'],
                       data['start'],
                       data['end'])
-        dummy = Class(**data)
         print(dummy)
 
 
