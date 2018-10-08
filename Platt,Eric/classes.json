@@ -1,0 +1,7 @@
+{
+	"classNumber": 2640,
+	"department": "CS",
+	"weekdays": ["monday", "wednesday", "friday"],
+	"start": "11:00",
+	"end": "12:00"
+}

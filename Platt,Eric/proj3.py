@@ -1,3 +1,6 @@
+import json
+
+
 class Group_16:
     def __init__(self, members):
         self.members = members
@@ -20,5 +23,38 @@ class GroupMember:
 
 
 class Class:
-    def __init__(self, department, classNumber, startTime, endTime):
-        pass
+    def __init__(self, department, classNumber, weekdays,  startTime, endTime):
+        self.department = department
+        self.classNumber = classNumber
+        self.weekdays = weekdays
+        self.startTime = startTime
+        self.endTime = endTime
+
+    def __str__(self):
+        return (f'department: {self.department}, \
+                classNumber: {self.classNumber}, \
+                weekdays: {self.weekdays}, \
+                time: {self.startTime} - {self.endTime}')
+
+
+# This is an experimental function to load class data.
+# It is not yet finished
+# It loads the json file containing the class information and passes it to a
+# new instance of Class
+
+def loadClasses():
+    with open('classes.json', 'r') as read_file:
+        data = json.load(read_file)
+        print(data)
+        print('\n')
+        dummy = Class(data['department'],
+                      data['classNumber'],
+                      data['weekdays'],
+                      data['start'],
+                      data['end'])
+        dummy = Class(**data)
+        print(dummy)
+
+
+if __name__ == '__main__':
+    loadClasses()
