@@ -1,2 +1,3 @@
 Name,Best Contact,Discord Username(# included)
 Bryce,Discord or email brycec848@gmail.com,Bryce#6969
+Nancy, Discord or email hgiang@cpp.edu, Nancy#2652
